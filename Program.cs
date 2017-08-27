@@ -44,7 +44,7 @@ namespace QuickSort
             for(int i=0; i < randomNumbers.Length; i++)
                 randomNumbers[i] = r.Next(10, 1000);
             Console.WriteLine("Unsorted array: {0}", string.Join(",", randomNumbers));        
-
+            
             int [] num2 = prg.QuickSort(randomNumbers.ToList()).ToArray();
             Console.WriteLine("Sorted array: {0}", string.Join(",", num2));        
         }
